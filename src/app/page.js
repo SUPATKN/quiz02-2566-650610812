@@ -13,13 +13,14 @@ export default function HomePage() {
         style={{ maxWidth: "700px", backgroundColor: "#242526" }}
         className="mx-auto p-3 rounded rounded-3 shadow-sm"
       >
-        {/* Post Owner Example*/}
-        <PostOwner />
-        {/* Comment Example */}
+        <PostOwner
+          userName="Supatkorn Pundontong"
+          studentId="650610812"
+          img="/profileImages/251169369_588664405706031_2780271531457327530_n.jpg"
+          postStatus="Quiz ง่ายจังเลยครับ ขอยาก ๆ กว่านี้ได้ไหม #261207"
+          likeNum="100"
+        />
 
-        {/* Reply Example */}
-
-        {/* map-loop render Comment component here */}
         {comments.map((com, index) => (
           <Comment
             key={index}
